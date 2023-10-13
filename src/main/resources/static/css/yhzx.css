@@ -1,0 +1,32 @@
+.yhzx h2{ background:url(../images/yhzz.gif) no-repeat; width:190px; height:45px; margin:0; font-size:14px; color:#FFF; padding-left:10px; padding-top:10px;}
+.yhzx ul{ border:1px solid #CCCCCC; border-top:none; margin-top:-19px; padding:15px 0 20px 0; width:198px;}
+.yhzx ul li{ border-bottom:1px solid #D0D0D0; background:url(../images/yhzz.gif) no-repeat; background-position:0 -85px; width:185px; height:32px; padding:0 0 0 15px; line-height:32px; font-size:14px;}
+.yhzx .sel{ border-bottom:1px solid #D0D0D0; background:url(../images/yhzz.gif) no-repeat; background-position:0 -55px; width:185px; height:32px; padding:0 0 0 15px; line-height:32px; font-size:14px;}
+.yhzx .sel a{ color:#B1072F; display:inline-block; font-weight:700;}
+.bor_t_n1{ border:1px solid #CCC; border-top:none; width:758px;}
+.bor_t_n2{ border:1px solid #CCC; border-top:none; width:978px;}
+.hyy{ padding:0px 0 0 40px;}
+.hyy p{ padding:6px 0 6px 0;}
+.hyy .gg{ width:653px; border:1px solid #EED97C; background:#FFFCEB; padding:15px;}
+.hyy .basic{ width:675px; margin:15px 0 15px 0;}
+.hyy .title_gray{ background:#F8F8F8; height:30px; line-height:30px; font-size:14px; font-weight:700;}
+.hyy .basic,.hyy .basic tr,.hyy .basic td { border:1px solid #E0E0E0; border-collapse:collapse; padding:5px;}
+.hyy .basic .te_r{ text-align:right;}
+.hyy .basic .te_m{ text-align:center;}
+.hyy .basic .inputgray{ border:1px solid #CCC; width:170px; height:18px; line-height:18px;}
+
+.login_l{ width:480px; height:280px; padding:20px 0 0 30px;}
+.login_title{ width:90px; height:35px;border-bottom:2px solid #CC0A37; line-height:35px;}
+.login_other{ width:270px; height:35px;border-bottom:2px solid #E7E7E7;}
+.lg_t td{ height:45px;}
+.lg_t .te_r{ text-align:right; font-size:14px;}
+.lg_t  .inputgray{ border:1px solid #CCC; width:170px; height:22px; line-height:22px;}
+
+.login_r{ width:330px; height:170px; margin:40px 0 0 40px; border-left:1px solid #E7E7E7; padding:20px;}
+.login_r p{ margin:14px 0 14px 0;}
+.reg{ padding:20px 0 20px 30px;}
+.reg_other{ width:700px; height:20px;border-bottom:2px solid #E7E7E7; text-align: right; padding-top:15px;}
+.hyy p{ width:675px;}
+.hyy .line_b{ border-bottom:1px dashed #D0D0D0;}
+.hyy .message .inputgray{ border:1px solid #CCC; width:170px; height:22px; line-height:22px;}
+

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <link href="/css/common.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/ej_common.css" rel="stylesheet" type="text/css"/>
+  <link href="/css/gwc.css" rel="stylesheet" type="text/css"/>
+  <title>平价手机网</title>
+  </head>
+  
+  <body>
+  <div class="top">
+      <div class="m_980 h_32">
+        <div class="fl-r font_ccc"><a href="#">我的账户</a> | <a href="#">帮助中心</a> | <a href="#">投诉与建议</a> | <a href="#">在线客服</a></div>
+          您好，欢迎来到酷淘！请<a href="/user/login">登录</a> <a href="/user/register" class="font_999">免费注册</a>
+      </div>
+  </div>
+      <div class="m_980">
+          <div class="logo">
+              <div class="logo_l"><a href="#"><img src="images/logo.jpg" border="0" /></a></div>
+              <div class="search">			
+                  <div class="search_l">
+                    <input name="textfield" type="text" class="search_input" value="请输入关键字"/>
+                    <input type="submit" name="Submit" value="搜索" class="search_btn font_c_14" />
+                  </div>
+                  <div class="search_r">热门： <a href="#" class="font_999">诺基亚</a>  <a href="#" class="font_999">给力</a>  <a href="#" class="font_999">三星</a>  苹果  <a href="#" class="font_999">直板</a> <a href="#" class="font_999">1000元以下</a></div>
+              </div>
+          </div>
+      </div>
+      <div class="m_980">
+              <div class="dh"><img src="images/nav_l.jpg" width="9" height="50" /></div>
+              <div class="nav">
+                  <ul>
+                      <li class="select"><a href="javascript:func()">网站首页</a></li>
+                      <li><a href="#">新品热卖</a></li>
+                      <li><a href="#">行货报价</a></li>
+                      <li><a href="#">水货报价</a></li>
+                      <li><a href="#">山寨批发</a></li>
+                      <li><a href="#">帮助中心</a></li>
+                  </ul>
+              </div>
+              <div class="gwc">
+                    <div class="gwc_l te_m">购物车 <span class="font_red">0</span> 件，共计 <span class="font_red">2000</span> 元</div>
+                  <div class="gwc_r te_m"><a href="#" class="font_red">去结算</a></div>
+              </div>
+              <div class="dh"><img src="images/nav_r.jpg" width="9" height="50" /></div>
+      </div>
+          <div class="m_980 weizhi">
+              当前位置：首页　＞ <a href="#">手机</a>　＞ 索尼爱立信索爱W995</div>
+          <div class="m_980">
+            <div class="gwc_pos three">
+                  <div class="un fl-l">1.我的购物车</div>
+                  <div class="un fl-l">2.填写核对订单信息</div>
+                  <div class="sel fl-l">3.成功填写订单</div>                
+            </div>
+          </div>
+          <div class="m_980">
+            <div class="gwc_logo g_three yh_22">成功填写订单</div></div>
+            <div class="m_980 bor_t_n ma_b8">
+              <div class="ej_l_title font_c_14 bor_t"></div>
+              <div class="gwc_c">
+                        <div class="te_m">
+                        <p class="add_suc_title1 yh_22 ma_b8">您的订单已提交成功，请记住您的订单号：<span class="font_red" th:text="${orderId}"></span></p>
+                        <p class=" pa_b5">您选择的配送方式：城际快递；支付方式：货到付款；应付金额：<span class="font_red font_c_14" th:text="'￥'+${orderSum}"></span> 元</p>
+                        <p>您可以 <a href="//index" class="font_red">返回首页</a> 或去 <a href="" class="font_red">用户中心</a></p></div>
+              </div>
+              </div>
+  <div class="bor_978 m ma_b8 tel">
+<div class="tel_c">
+              <ul>
+                  <li><strong>购物流程</strong></li>
+                  <li><a href="#">品质保障承诺</a></li>
+                  <li><a href="#">关于我们</a></li>															
+              </ul>
+          </div>
+          <div class="tel_c">		
+              <ul>
+                  <li><strong>新手指南</strong></li>
+                  <li><a href="#">网站订购流程</a></li>
+                  <li><a href="#">会员积分优惠</a></li>															
+              </ul>
+          </div>
+          <div class="tel_c">
+              <ul>
+                  <li><strong>付款方式</strong></li>
+                  <li><a href="#">支付方式</a></li>
+                  <li><a href="#">常见支付问题</a></li>															
+              </ul>
+          </div>
+          <div class="tel_c">		
+              <ul>
+                  <li><strong>配送方式</strong></li>
+                  <li><a href="#">配送方式及范围</a></li>
+                  <li><a href="#">货到付款</a></li>
+                  <li><a href="#">配送常见问题</a></li>																			
+              </ul>
+          </div>
+          <div class="tel_c">		
+              <ul>
+                  <li><strong>售后服务</strong></li>
+                  <li><a href="#">三重购物保障</a></li>
+                  <li><a href="#">退款方式及时间</a></li>															
+              </ul>
+          </div>			
+</div>
+  <!--尾部区-->
+  <div th:replace="/footer"></div>
+      
+  </body>
+  </html>

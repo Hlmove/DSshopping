@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <link href="/css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/index.css" rel="stylesheet" type="text/css"/>
+    <title>平价手机网</title>
+</head>
+
+<body>
+<div class="top">
+    <div class="m_980 h_32">
+        <div class="fl-r font_ccc"><a href="#">我的账户</a> | <a href="#">帮助中心</a> | <a href="#">投诉与建议</a> | <a href="#">在线客服</a></div>
+        您好，欢迎来到酷淘！请<a href="/user/login">登录</a> <a href="/user/register" class="font_999">免费注册</a>
+    </div>
+</div>
+<div class="m_980">
+    <div class="logo">
+        <div class="logo_l"><a href="#"><img src="/images/logo.jpg" border="0" /></a></div>
+        <div class="search">
+            <div class="search_l">
+                <input name="textfield" type="text" class="search_input" value="请输入关键字"/>
+                <input type="submit" name="Submit" value="搜索" class="search_btn font_c_14" />
+            </div>
+            <div class="search_r">热门： <a href="#" class="font_999">诺基亚</a>  <a href="#" class="font_999">给力</a>  <a href="#" class="font_999">三星</a>  苹果  <a href="#" class="font_999">直板</a> <a href="#" class="font_999">1000元以下</a></div>
+        </div>
+    </div>
+</div>
+<div class="m_980">
+    <div class="dh"><img src="/images/nav_l.jpg" width="9" height="50" /></div>
+    <div class="nav">
+        <ul>
+            <li class="select"><a href="javascript:func()">网站首页</a></li>
+            <li><a href="/product/index">新品热卖</a></li>
+            <li><a href="#">行货报价</a></li>
+            <li><a href="#">水货报价</a></li>
+            <li><a href="#">山寨批发</a></li>
+            <li><a href="#">帮助中心</a></li>
+        </ul>
+    </div>
+    <div class="gwc">
+        <div class="gwc_l te_m">购物车 <span class="font_red" th:text="${orderCount}"></span> 件，共计
+            <span class="font_red" th:text="${orderSum}">2000</span> 元</div>
+        <div class="gwc_r te_m"><a href="/order/gwc1" class="font_red">去结算</a></div>
+    </div>
+    <div class="dh"><img src="/images/nav_r.jpg" width="9" height="50" /></div>
+</div>
+<div class="m_980">
+    <div class="l_731 ma_b8">
+        <div class="l_731"><img src="/images/ad.jpg" width="731" height="290" /></div>
+        <div class="l_731 ma_b8">
+            <div class="ad_select bor_r"><a href="#">LG GPS导航 黑色超值热卖￥1220</a></div>
+            <div class="ad_tab bor_r"><a href="#">LG GPS导航 黑色超值热卖￥1220</a></div>
+            <div class="ad_tab"><a href="#">LG GPS导航 黑色超值热卖￥1220</a></div>
+        </div>
+        <div class="l_731_b">
+            <div class="rmfl_l font_c_14">热门分类</div>
+            <div class="rmfl_r"></div>
+            <div class="rmfl_list">
+                <ul>
+                    <li><span class="font_c_14"><a href="#">品牌</a></span>&nbsp;&nbsp; <a href="#" class="font_bg">全部</a>  |  <a href="#">诺基亚</a>  |  <a href="#">三星</a>  |  <a href="#">LG</a>  |  <a href="$">摩托罗拉</a>  |  <a href="#">索爱</a>
+                        <a href="#">诺基亚</a>  |  <a href="#">三星</a>  |  <a href="#">LG</a>  |  <a href="$">摩托罗拉</a>  |  <a href="#">索爱</a><a href="#">诺基亚</a>  |  <a href="#">三星</a>  |  <a href="#">LG</a></li>
+                    <li><span class="font_c_14"><a href="#">功能</a></span>&nbsp;&nbsp; <a href="#" class="font_bg">全部</a>  |  <a href="#">诺基亚</a>  |  <a href="#">三星</a>  |  <a href="#">LG</a>  |  <a href="$">摩托罗拉</a>  |  <a href="#">索爱</a>
+                        <a href="#">诺基亚</a>  |  <a href="#">三星</a>  |  <a href="#">LG</a>  |  <a href="$">摩托罗拉</a>  |  <a href="#">索爱</a><a href="#">诺基亚</a>  |  <a href="#">三星</a>  |  <a href="#">LG</a></li>
+                    <li><span class="font_c_14"><a href="#">价格</a></span>&nbsp;&nbsp; <a href="#" class="font_bg">全部</a>  |  <a href="#">诺基亚</a>  |  <a href="#">三星</a>  |  <a href="#">LG</a>  |  <a href="$">摩托罗拉</a>  |  <a href="#">索爱</a>
+                        <a href="#">诺基亚</a>  |  <a href="#">三星</a>  |  <a href="#">LG</a>  |  <a href="$">摩托罗拉</a>  |  <a href="#">索爱</a><a href="#">诺基亚</a>  |  <a href="#">三星</a>  |  <a href="#">LG</a></li>
+                    <li style="background:none;"><span class="font_c_14"><a href="#">价格</a></span>&nbsp;&nbsp; <a href="#" class="font_bg">全部</a>  |  <a href="#">诺基亚</a>  |  <a href="#">三星</a>  |  <a href="#">LG</a>  |  <a href="$">摩托罗拉</a>  |  <a href="#">索爱</a>
+                        <a href="#">诺基亚</a>  |  <a href="#">三星</a>  |  <a href="#">LG</a>  |  <a href="$">摩托罗拉</a>  |  <a href="#">索爱</a><a href="#">诺基亚</a>  |  <a href="#">三星</a>  |  <a href="#">LG</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="r_230">
+        <div class="r_230_b ma_b8">
+            <div class="news_t">最新动态</div>
+            <div class="news_c w_208">
+                <ul class="over">
+                    <li>·<a href="#">新年新契机 惠普购机送豪礼！</a></li>
+                    <li>·<a href="#">新年新契机 惠普购机送豪礼！</a></li>
+                    <li>·<a href="#">新年新契机 惠普购机送豪礼！</a></li>
+                    <li>·<a href="#">新年新契机 惠普购机送豪礼！</a></li>
+                    <li>·<a href="#">新年新契机 惠普购机送豪礼！</a></li>
+                    <li>·<a href="#">新年新契机 惠普购机送豪礼惠普购机送豪礼豪礼惠普购机送豪礼！！</a></li>
+                    <li>·<a href="#">新年新契机 惠普购机送豪礼！</a></li>
+                    <li>·<a href="#">新年新契机 惠sdfsdfsdfdf普购机送豪礼！</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="r_230_b ma_b8">
+            <div class="new_pro">
+                <div class="pic_150 m ma_b8 ma_t40"><img src="/images/pic150.jpg" width="150" height="150" /></div>
+                <div class="title_150 m"><a href="#">LG GD330 GPS导航  GPS导航黑色</a><span class="font_red">￥179</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="m_980 bor_2red">
+    <div class="pro_select yh_26"><a href="#">行 货</a></div>
+    <div class="pro_tab yh_26"><a href="#">水 货</a></div>
+    <div class="pro_tab yh_26"><a href="#">山 寨</a></div>
+
+</div>
+<div class="bor_978 m ma_b8">
+    <div class="pro_tl">
+        <ul>
+            <li>
+                <div class="pic_100 ma_b5"><img src="/images/pic100.jpg" width="100" height="100" /></div>
+                <div class="title_130 he_35"><a href="">索尼爱立信索爱W995 W995C</a></div>
+                <div class="title_130 font_red">￥1399</div>
+            </li>
+            <li>
+                <div class="pic_100"><img src="/images/pic100.jpg" width="100" height="100" /></div>
+                <div class="title_130 he_35">索尼爱立信索爱W995 W995C</div>
+                <div class="title_130 font_red">￥1399</div>
+            </li>
+            <li>
+                <div class="pic_100"><img src="/images/pic100.jpg" width="100" height="100" /></div>
+                <div class="title_130 he_35">索尼爱立信索爱W995 W995C</div>
+                <div class="title_130 font_red">￥1399</div>
+            </li>
+            <li>
+                <div class="pic_100"><img src="/images/pic100.jpg" width="100" height="100" /></div>
+                <div class="title_130 he_35">索尼爱立信索爱W995 W995C索尼爱立信索爱W995 W995C索尼爱立信索爱W995 W995C索尼爱立信索爱W995 W995C</div>
+                <div class="title_130 font_red">￥1399</div>
+            </li>
+            <li>
+                <div class="pic_100"><img src="/images/pic100.jpg" width="100" height="100" /></div>
+                <div class="title_130 he_35">索尼爱立信索爱W995 W995C</div>
+                <div class="title_130 font_red">￥1399</div>
+            </li>
+            <li>
+                <div class="pic_100"><img src="/images/pic100.jpg" width="100" height="100" /></div>
+                <div class="title_130 he_35">索尼爱立信索爱W995 W995C</div>
+                <div class="title_130 font_red">￥1399</div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <div class="pic_100"><img src="/images/pic100.jpg" width="100" height="100" /></div>
+                <div class="title_130">索尼爱立信索爱W995 W995C</div>
+                <div class="title_130 font_red">￥1399</div>
+            </li>
+            <li>
+                <div class="pic_100"><img src="/images/pic100.jpg" width="100" height="100" /></div>
+                <div class="title_130 he_35">索尼爱立信索爱W995 W995C</div>
+                <div class="title_130 font_red">￥1399</div>
+            </li>
+            <li>
+                <div class="pic_100"><img src="/images/pic100.jpg" width="100" height="100" /></div>
+                <div class="title_130 he_35">索尼爱立信索爱W995 W995C</div>
+                <div class="title_130 font_red">￥1399</div>
+            </li>
+            <li>
+                <div class="pic_100"><img src="/images/pic100.jpg" width="100" height="100" /></div>
+                <div class="title_130 he_35">索尼爱立信索爱W995 W995C索尼爱立信索爱W995 W995C</div>
+                <div class="title_130 font_red">￥1399</div>
+            </li>
+            <li>
+                <div class="pic_100"><img src="/images/pic100.jpg" width="100" height="100" /></div>
+                <div class="title_130 he_35">索尼爱立信索爱W995 W995C</div>
+                <div class="title_130 font_red">￥1399</div>
+            </li>
+            <li>
+                <div class="pic_100"><img src="/images/pic100.jpg" width="100" height="100" /></div>
+                <div class="title_130 he_35">索尼爱立信索爱W995 W995C</div>
+                <div class="title_130 font_red">￥1399</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="bor_978 m ma_b8 tel">
+    <div class="tel_c">
+        <ul>
+            <li><strong>购物流程</strong></li>
+            <li><a href="#">品质保障承诺</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+    </div>
+    <div class="tel_c">
+        <ul>
+            <li><strong>新手指南</strong></li>
+            <li><a href="#">网站订购流程</a></li>
+            <li><a href="#">会员积分优惠</a></li>
+        </ul>
+    </div>
+    <div class="tel_c">
+        <ul>
+            <li><strong>付款方式</strong></li>
+            <li><a href="#">支付方式</a></li>
+            <li><a href="#">常见支付问题</a></li>
+        </ul>
+    </div>
+    <div class="tel_c">
+        <ul>
+            <li><strong>配送方式</strong></li>
+            <li><a href="#">配送方式及范围</a></li>
+            <li><a href="#">货到付款</a></li>
+            <li><a href="#">配送常见问题</a></li>
+        </ul>
+    </div>
+    <div class="tel_c">
+        <ul>
+            <li><strong>售后服务</strong></li>
+            <li><a href="#">三重购物保障</a></li>
+            <li><a href="#">退款方式及时间</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--尾部区-->
+<div th:replace="/footer"></div>
+
+</body>
+</html>
